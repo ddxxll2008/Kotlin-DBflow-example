@@ -48,3 +48,9 @@ FlowManager.init(getApplicationContext());
 
 
 **不要忘记在Manifest文件下配置自定义的Application**
+
+##APP效果
+
+![image](https://github.com/ddxxll2008/Kotlin-DBflow-example/blob/master/dbflow-kotlin-example.gif)
+
+输入姓名，选择性别，点击添加按钮，则将数据存入数据库中。点击该数据，则将此数据从数据库中删除。
