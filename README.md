@@ -27,7 +27,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
-	// DBFlow
+    // DBFlow
     kapt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
@@ -36,3 +36,15 @@ apply plugin: 'kotlin-kapt'
     // Kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 ```
+
+##初始化
+
+使用DBFlow需要在app的Application中初始化配置：
+
+```
+//初始化配置DBFlow
+FlowManager.init(getApplicationContext());
+```
+
+
+**不要忘记在Manifest文件下配置自定义的Application**
